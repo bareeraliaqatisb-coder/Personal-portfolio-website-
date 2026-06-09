@@ -1,0 +1,24 @@
+/* ===== BASE ===== */ body { margin: 0; font-family: Arial, sans-serif; background: linear-gradient(135deg, #0f172a, #1e293b); color: white; scroll-behavior: smooth; }
+/* ===== NAVBAR ===== */ nav { position: fixed; top: 0; width: 100%; background: rgba(0,0,0,0.6); backdrop-filter: blur(10px); display: flex; justify-content: center; gap: 20px; padding: 15px; z-index: 1000; animation: slideDown 1s ease; }
+nav a { color: white; text-decoration: none; padding: 8px 15px; border-radius: 8px; transition: 0.3s; }
+nav a:hover { background: #38bdf8; color: black; }
+/* ===== HOME ===== */ .home-box { text-align: center; padding: 120px 20px 80px; background: linear-gradient(135deg, #6366f1, #06b6d4); }
+.home-box h1 { font-size: 40px; margin-bottom: 10px; }
+/* ===== SECTIONS ===== */ section { padding: 60px 20px; }
+section h2 { text-align: center; font-size: 30px; color: #38bdf8; margin-bottom: 20px; }
+/* ===== CARDS ===== */ .box { background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.2); margin: 20px auto; padding: 20px; width: 80%; max-width: 700px; border-radius: 15px; backdrop-filter: blur(10px); box-shadow: 0 8px 20px rgba(0,0,0,0.3); transition: 0.4s ease; }
+.box:hover { transform: translateY(-10px); background: rgba(255, 255, 255, 0.15); }
+/* ===== BUTTONS ===== */ button { display: block; margin: 20px auto; padding: 10px 20px; border: none; border-radius: 8px; background: #38bdf8; color: black; cursor: pointer; transition: 0.3s; }
+button:hover { background: white; transform: scale(1.05); }
+/* ===== ANIMATIONS ===== */ @keyframes fadeIn { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideDown { from { transform: translateY(-100%); } to { transform: translateY(0); } }
+/* ===== RESPONSIVE ===== */ @media (max-width: 768px) { .box { width: 90%; }
+.home-box h1 {
+    font-size: 28px;
+}
+
+nav {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+}
